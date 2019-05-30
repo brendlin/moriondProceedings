@@ -6,6 +6,9 @@
 
 \usepackage{lineno}
 
+% I want to have square brackets
+\usepackage[square,numbers]{natbib}
+
 \bibliographystyle{unsrt}    
 % for BibTeX - sorted numerical labels by order of
 % first citation.
@@ -221,120 +224,13 @@ Citations in the text use the labels defined in the bibitem declaration,
 for example, the first paper by Jarlskog~ is cited using the command
 \verb^\cite{ja}^.
 
-%If you more commonly use the method of square brackets in the line of text
-%for citation than the superscript method,
-%please note that you need  to adjust the punctuation
-%so that the citation command appears after the punctuation mark.
-
-\subsection{Photograph}
-
-You may want to include a photograph of yourself below the title
-of your talk. A scanned photo can be 
-directly included using the default command\\
-\verb^\newcommand{\Photo}{\includegraphics[height=35mm]{mypicture}}^\\
-just before the 
-\verb^\begin{document}^
-line. If you don't want to include your photo, just comment this line
-by adding the \verb^%^ sign at the beginning of 
-the line and uncomment the next one
-\verb^%\newcommand{\Photo}{}^ by removing its \verb^%^ sign.
-
-\subsection{Final Manuscript}\label{subsec:final}
-
-All files (.tex, figures and .pdf) should be sent by the {\bf 15th of May 2017}
-by e-mail 
-to \\
-{\bf moriond@in2p3.fr}.\\
-
-\section{Sample Text }
-
-The following may be (and has been) described as `dangerously irrelevant'
-physics. The Lorentz-invariant phase space integral for
-a general n-body decay from a particle with momentum $P$
-and mass $M$ is given by:
-\begin{equation}
-I((P - k_i)^2, m^2_i, M) = \frac{1}{(2 \pi)^5}\!
-\int\!\frac{d^3 k_i}{2 \omega_i} \! \delta^4(P - k_i).
-\label{eq:murnf}
-\end{equation}
-The only experiment on $K^{\pm} \ra \pi^{\pm} \pi^0 \gamma$ since 1976
-is that of Bolotov {\it et al}.~
-        There are two
-necessary conditions required for any acceptable
-parametrization of the
-quark mixing matrix. The first is that the matrix must be unitary, and the
-second is that it should contain a CP violating phase $\delta$.
- In Sec.~\ref{subsec:fig} the connection between invariants (of
-form similar to J) and unitarity relations
-will be examined further for the more general $ n \times n $ case.
-The reason is that such a matrix is not a faithful representation of the group,
-i.e. it does not cover all of the parameter space available.
-\begin{equation}
-\renewcommand{\arraystretch}{1.2}
-\begin{array}{rc@{\,}c@{\,}l}
-%\begin{array}{>{\displaystyle}r>{\displaystyle}c>{\displaystyle}c>{\displaystyle}l}
-
-%\begin{eqnarray}
-\bf{K} & = &&  Im[V_{j, \alpha} {V_{j,\alpha + 1}}^*
-{V_{j + 1,\alpha }}^* V_{j + 1, \alpha + 1} ] \\
-       &   & + & Im[V_{k, \alpha + 2} {V_{k,\alpha + 3}}^*
-{V_{k + 1,\alpha + 2 }}^* V_{k + 1, \alpha + 3} ]  \\
-       &   & + & Im[V_{j + 2, \beta} {V_{j + 2,\beta + 1}}^*
-{V_{j + 3,\beta }}^* V_{j + 3, \beta + 1} ]  \\
-       &   & + & Im[V_{k + 2, \beta + 2} {V_{k + 2,\beta + 3}}^*
-{V_{k + 3,\beta + 2 }}^* V_{k + 3, \beta + 3}] \\
-& & \\
-\bf{M} & = &&  Im[{V_{j, \alpha}}^* V_{j,\alpha + 1}
-V_{j + 1,\alpha } {V_{j + 1, \alpha + 1}}^* ]  \\
-       &   & + & Im[V_{k, \alpha + 2} {V_{k,\alpha + 3}}^*
-{V_{k + 1,\alpha + 2 }}^* V_{k + 1, \alpha + 3} ]  \\
-       &   & + & Im[{V_{j + 2, \beta}}^* V_{j + 2,\beta + 1}
-V_{j + 3,\beta } {V_{j + 3, \beta + 1}}^* ]  \\
-       &   & + & Im[V_{k + 2, \beta + 2} {V_{k + 2,\beta + 3}}^*
-{V_{k + 3,\beta + 2 }}^* V_{k + 3, \beta + 3}],
-\\ & &
-\end{array}
-%\end{eqnarray}
-\label{eq:spa}
-\end{equation}
-
-where $ k = j$ or $j+1$ and $\beta = \alpha$ or $\alpha+1$, but if
-$k = j + 1$, then $\beta \neq \alpha + 1$ and similarly, if
-$\beta = \alpha + 1$ then $ k \neq j + 1$.\footnote{An example of a
-matrix which has elements
-containing the phase variable $e^{i \delta}$ to second order, i.e.
-elements with a
-phase variable $e^{2i \delta}$ is given at the end of this section.}
-   There are only 162 quark mixing matrices using these parameters
-which are
-to first order in the phase variable $e^{i \delta}$ as is the case for
-the Jarlskog parametrizations, and for which J is not identically
-zero.
-It should be noted that these are physically identical and
-form just one true parametrization.
-\bea
-T & = & Im[V_{11} {V_{12}}^* {V_{21}}^* V_{22}]  \nonumber \\
-&  & + Im[V_{12} {V_{13}}^* {V_{22}}^* V_{23}]   \nonumber \\
-&  & - Im[V_{33} {V_{31}}^* {V_{13}}^* V_{11}].
-\label{eq:sp}
-\eea
+\section{Measurement of Higgs production in association with a $t\bar t$ pair in the diphoton decay channel}\label{subsec:final}
 
 
-\begin{figure}
-\begin{minipage}{0.33\linewidth}
-\centerline{\includegraphics[width=0.7\linewidth,draft=true]{figexamp}}
-\end{minipage}
-\hfill
-\begin{minipage}{0.32\linewidth}
-\centerline{\includegraphics[width=0.7\linewidth]{figexamp}}
-\end{minipage}
-\hfill
-\begin{minipage}{0.32\linewidth}
-\centerline{\includegraphics[angle=-45,width=0.7\linewidth]{figexamp}}
-\end{minipage}
-\caption[]{same figure with draft option (left), normal (center) and rotated (right)}
-\label{fig:radish}
-\end{figure}
+
+\section{Measurement of the $VH$ production mode in the $WW$ decay channel} \label{sec:vh_ww}
+
+Using 36.1~fb$^{-1}$.
 
 \section*{Summary}
 
