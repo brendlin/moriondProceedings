@@ -79,154 +79,19 @@ VBF $H{\rightarrow}WW$ \cite{HIGG-2017-14}
 ttH diphoton \cite{ATLAS-CONF-2019-004}
 Hbb and VH observation \cite{HIGG-2018-04}.
 
-The Moriond proceedings are printed from camera-ready manuscripts.
-The following guidelines are intended to get a uniform rending of the 
-proceedings. Authors with no connection to \LaTeX{} should use this
-sample text as a guide for their presentation using their favorite
-text editor (see section~\ref{subsec:final})
+\section{Measurement of the $VH$ production mode in the $b\bar b$ decay channel}\label{sec:vh_bb}
 
-\subsection{Producing the Hard Copy}\label{subsec:prod}
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=0.425\linewidth]{figures/HIGG-2018-50/fig_01_v1.pdf}
+\includegraphics[width=0.565\linewidth]{figures/HIGG-2018-50/fig_03.pdf}
+\caption{
+  Left: the BDT. Right: The results.
+}
+\label{fig:vh_bb}
+\end{figure}
 
-The hard copy may be printed using the procedure given below.
-You should use
-two files: \footnote{You can get these files from
-our site at \url{http://moriond.in2p3.fr/proceedings.php}.}
-\begin{description}
-\item[\texttt{moriond.cls}] the style file that provides the higher
-level \LaTeX{} commands for the proceedings. Don't change these parameters.
-\item[\texttt{moriond.tex}] the main text. You can delete our sample
-text and replace it with your own contribution to the volume, however we
-recommend keeping an initial version of the file for reference.
-\end{description}
-The command for (pdf)\LaTeX ing is \texttt{pdflatex moriond}: do this twice to
-sort out the cross-referencing.
-
-%If there is an abbreviation
-%defined in the new definitions at the top of the file {\em moriond.tex} that
-%conflicts with one of your own macros, then
-%delete the appropriate command and revert to longhand. Failing that, please
-%consult your local texpert to check for other conflicting macros that may
-%be unique to your computer system.
-{\bf Page numbers should not appear.}
-
-\subsection{Headings and Text and Equations}
-
-Please preserve the style of the
-headings, text fonts and line spacing to provide a
-uniform style for the proceedings volume.
-
-Equations should be centered and numbered consecutively, as in
-Eq.~\ref{eq:murnf}, and the {\em eqnarray} environment may be used to
-split equations into several lines, for example in Eq.~\ref{eq:sp},
-or to align several equations.
-An alternative method is given in Eq.~\ref{eq:spa} for long sets of
-equations where only one referencing equation number is wanted.
-
-In \LaTeX, it is simplest to give the equation a label, as in
-Eq.~\ref{eq:murnf}
-where we have used \verb^\label{eq:murnf}^ to identify the
-equation. You can then use the reference \verb^\ref{eq:murnf}^
-when citing the equation in the
-text which will avoid the need to manually renumber equations due to
-later changes. (Look at
-the source file for some examples of this.)
-
-The same method can be used for referring to sections and subsections.
-
-\subsection{Tables}
-
-The tables are designed to have a uniform style throughout the proceedings
-volume. It doesn't matter how you choose to place the inner
-lines of the table, but we would prefer the border lines to be of the style
-shown in Table~\ref{tab:exp}.
- The top and bottom horizontal
-lines should be single (using \verb^\hline^), and
-there should be single vertical lines on the perimeter,
-(using \verb^\begin{tabular}{|...|}^).
- For the inner lines of the table, it looks better if they are
-kept to a minimum. We've chosen a more complicated example purely as
-an illustration of what is possible.
-
-The caption heading for a table should be placed at the top of the table.
-
-\begin{table}[t]
-\caption[]{Experimental Data bearing on $\Gamma(K \ra \pi \pi \gamma)$
-for the $\ko_S, \ko_L$ and $K^-$ mesons.}
-\label{tab:exp}
-\vspace{0.4cm}
-\begin{center}
-\begin{tabular}{|c|c|c|l|}
-\hline
-& & & \\
-&
-$\Gamma(\pi^- \pi^0)\; s^{-1}$ &
-$\Gamma(\pi^- \pi^0 \gamma)\; s^{-1}$ &
-\\ \hline
-\mco{2}{|c|}{Process for Decay} & & \\
-\cline{1-2}
-$K^-$ &
-$1.711 \times 10^7$ &
-\begin{minipage}{1in}
-$2.22 \times 10^4$ \\ (DE $ 1.46 \times 10^3)$
-\end{minipage} &
-\begin{minipage}{1.5in}
-No (IB)-E1 interference seen but data shows excess events relative to IB over
-$E^{\ast}_{\gamma} = 80$ to $100MeV$
-\end{minipage} \\
-& & &  \\ \hline
-\end{tabular}
-\end{center}
-\end{table}
-
-
-\subsection{Figures}\label{subsec:fig}
-
-If you wish to `embed' an image or photo in the file, you can use
-the present template as an example. The command 
-\verb^\includegraphics^ can take several options, like
-\verb^draft^ (just for testing the positioning of the figure)
-or \verb^angle^ to rotate a figure by a given angle.
-
-The caption heading for a figure should be placed below the figure.
-
-\subsection{Limitations on the Placement of Tables,
-Equations and Figures}\label{sec:plac}
-
-Very large figures and tables should be placed on a page by themselves. One
-can use the instruction \verb^\begin{figure}[p]^ or
-\verb^\begin{table}[p]^
-to position these, and they will appear on a separate page devoted to
-figures and tables. We would recommend making any necessary
-adjustments to the layout of the figures and tables
-only in the final draft. It is also simplest to sort out line and
-page breaks in the last stages.
-
-\subsection{Acknowledgments, Appendices, Footnotes and the Bibliography}
-
-If you wish to have
-acknowledgments to funding bodies etc., these may be placed in a separate
-section at the end of the text, before the Appendices. This should not
-be numbered so use \verb^\section*{Acknowledgments}^.
-
-It's preferable to have no appendices in a brief article, but if more
-than one is necessary then simply copy the
-\verb^\section*{Appendix}^
-heading and type in Appendix A, Appendix B etc. between the brackets.
-
-Footnotes are denoted by a letter superscript
-in the text,\footnote{Just like this one.} and references
-are denoted by a number superscript.
-
-Bibliography can be generated either manually or through the BibTeX
-package (which is recommanded). In this sample we
-have used \verb^\bibitem^ to produce the bibliography.
-Citations in the text use the labels defined in the bibitem declaration,
-for example, the first paper by Jarlskog~ is cited using the command
-\verb^\cite{ja}^.
-
-\section{Measurement of Higgs production in association with a $t\bar t$ pair in the diphoton decay channel}\label{subsec:final}
-
-
+\section{Measurement of Higgs production in association with a $t\bar t$ pair in the diphoton decay channel}\label{sec:ttH_yy}
 
 \section{Measurement of the $VH$ production mode in the $WW$ decay channel} \label{sec:vh_ww}
 
