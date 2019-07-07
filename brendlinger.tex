@@ -16,6 +16,10 @@
 % for BibTeX - sorted numerical labels by order of
 % first citation.
 
+\usepackage{xspace}
+\def\wh{\texorpdfstring{\ensuremath{W\kern -0.1em H}\xspace}{WH\xspace}}
+\def\vh{\texorpdfstring{\ensuremath{V\kern -0.1em H}\xspace}{VH\xspace}}
+
 % A useful Journal macro
 \def\Journal#1#2#3#4{{#1} {\bf #2}, #3 (#4)}
 
@@ -72,7 +76,7 @@ Recent Higgs boson results are presented using up to 140~fb$^{-1}$ of proton-pro
 delivered by the Large Hadron Collider and recorded by the ATLAS Detector.
 Three measurements are discussed:
 first, the cross section of a Higgs boson produced in association with a vector boson is measured in phase space
-regions called simplified template cross sections,
+regions called simplified template cross sections (STXS),
 using events with the Higgs decaying to a $b\bar b$ pair.
 An additional measurement of this associated Higgs production is performed in the $H{\rightarrow}WW$
 decay channel.
@@ -90,7 +94,7 @@ ATLAS Detector \cite{PERF-2007-01} is able to probe the nature of the Higgs boso
 precision. The following summarizes the most recent measurements of Higgs boson production using up
 to 140 fb$^{-1}$ of high-quality data. These measurements are performed in the $b\bar b$,
 diphoton ($\gamma\gamma$) and $WW$ (${\rightarrow}\ell\nu\ell'\nu'$) decay channels, and specifically
-target Higgs production in association with a vector boson ($VH$) or in assoication with a top
+target Higgs production in association with a vector boson (\vh) or in assoication with a top
 quark pair ($t\bar tH$).
 
 Higgs measurements are performed in the context of the simplified template cross section
@@ -98,14 +102,14 @@ framework \cite{deFlorian:2016spz,Badger:2016bpw},
 which is designed to measure cross sections of production modes as well as kinematic phase space
 regions, while reducing the model dependence contained inside the measurements.
 
-\section{Measurement of the $VH$ production mode in the $b\bar b$ decay channel}\label{sec:vh_bb}
+\section{Measurement of the \vh production mode in the $b\bar b$ decay channel}\label{sec:vh_bb}
 
 The observation of Higgs boson production in association with a $W$ or $Z$ boson, reported in
 \cite{HIGG-2018-04}, was achieved by combined measurements in the $H{\rightarrow}b\bar b$,
 $H{\rightarrow}ZZ^*{\rightarrow}4\ell$ and $H{\rightarrow}\gamma\gamma$ decay channels using
 80~fb$^{-1}$ of data collected in Run~2.
-Following the observation, the $VH$ production mode is studied in further detail using Higgs bosons
-decaying to a pair of $b$-jets \cite{HIGG-2018-50}, the most sensitive decay channel for the $VH$ production mode,
+Following the observation, the \vh production mode is studied in further detail using Higgs bosons
+decaying to a pair of $b$-jets \cite{HIGG-2018-50}, the most sensitive decay channel for the \vh production mode,
 using the same analysis strategy and integrated luminosity.
 The cross section is measured in bins of the transverse momentum of the associated vector boson,
 $p^{V}_\mathrm{T}$. We do this because BLAH.
@@ -116,7 +120,7 @@ are trained, one for each signal region considered.
 The correlation between the $p^{V}_\mathrm{T}$ and the BDT output score is exploited
 to extract the cross section in each truth $p^{V}_\mathrm{T}$ category.
 Figure~\ref{fig:vh_bb_a} compares the BDT output of the inclusive signal as well as the two
-truth categories (?) for a signal region targeting $WH$ production with the $W$ boson decaying to
+truth categories (?) for a signal region targeting \wh production with the $W$ boson decaying to
 $\ell\nu$. The clear shape differences, and their distinguishability from background, can be used to
 extract both cross sections simultaneously.
 
@@ -128,7 +132,11 @@ of the simplified template cross section framework.
   \subfloat[\label{fig:vh_bb_a}] {\includegraphics[width=0.425\textwidth]{figures/HIGG-2018-50/fig_01_v1.pdf}}
   \subfloat[\label{fig:vh_bb_b}] {\includegraphics[width=0.565\textwidth]{figures/HIGG-2018-50/fig_03.pdf}}
   \caption{
-    Left: the BDT. Right: The results.
+    (a) The shape of the signal and background  distributions of the BDT in the 1-lepton, 2-jet
+    reconstructed event category targeting \wh production. The shape of two STXS signal regions
+    featuring different $p^{V}_\mathrm{T}$ is also shown, highlighting the correlation between
+    $p^{V}_\mathrm{T}$ and the BDT response.
+    (b) The measured cross sections in five STXS regions, and their comparison to the SM prediction.
   }
   \label{fig:vh_bb}
 \end{figure}
@@ -155,14 +163,14 @@ production processes, and continuous background is shown for each catgory.
   \label{fig:tth}
 \end{figure}
 
-\section{Measurement of the $VH$ production mode in the $WW$ decay channel} \label{sec:vh_ww}
+\section{Measurement of the \vh production mode in the $WW$ decay channel} \label{sec:vh_ww}
 
-The $VH$ production of Higgs bosons is also studied in the $H{\rightarrow}WW$ decay channel
+The \vh production of Higgs bosons is also studied in the $H{\rightarrow}WW$ decay channel
  using 36.1~fb$^{-1}$ \cite{HIGG-2017-14}.
 
-Figure~\ref{fig:ww_vh_a} depicts the fitted $WH$ signal and background in the 6 BDT bins.
+Figure~\ref{fig:ww_vh_a} depicts the fitted \wh signal and background in the 6 BDT bins.
 
-Figure~\ref{fig:ww_vh_b} compares the measured cross section times branching ratio for $ZH$ and $WH$,
+Figure~\ref{fig:ww_vh_b} compares the measured cross section times branching ratio for $ZH$ and \wh,
 compared to the SM prediction. A mild excess is seen in both cases, though the measured values are
 consistent with the SM expectation.
 
