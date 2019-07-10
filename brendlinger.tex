@@ -94,20 +94,12 @@ The Large Hadron Collider (LHC) \cite{Evans:2008zzb} has delivered about 155 fb$
 collisions at a center-of-mass energy of $\sqrt{s}=13$~TeV during its Run 2 data taking program
 between 2015 and 2018.
 With this data, the
-ATLAS detector \cite{PERF-2007-01} is able to probe the nature of the Higgs boson with unprecedented
+ATLAS detector \cite{PERF-2007-01,ATLAS-TDR-19} is able to probe the nature of the Higgs boson with unprecedented
 precision. The following summarizes the most recent measurements of Higgs boson production using up
 to 139 fb$^{-1}$ of high-quality data. These measurements are performed in the $b\bar b$,
 and $WW$ (${\rightarrow}\ell\nu\ell'\nu'$) and diphoton ($\gamma\gamma$) decay channels, and specifically
 target Higgs boson production in association with a vector boson (\vh) or in association with a top
 quark pair ($t\bar tH$).
-
-Higgs boson measurements are performed in the context of the simplified template cross section
-(STXS) framework \cite{deFlorian:2016spz,Badger:2016bpw},
-which is designed to measure cross sections of production modes as well as kinematic phase space
-regions, while reducing the model dependence of the measurements.
-Using advanced machine learning techniques to isolate the signal in these regions,
-a strategy that is applied in the analyses described here, can further enhance the experimental
-sensitivity of these cross section measurements.
 
 \section{Measurement of the \vh production mode in the $b\bar b$ decay channel}\label{sec:vh_bb}
 
@@ -118,8 +110,15 @@ $H{\rightarrow}ZZ^*{\rightarrow}4\ell$ and $H{\rightarrow}\gamma\gamma$ decay ch
 Following the observation, the \vh production mode is studied in further detail using Higgs bosons
 decaying to a pair of $b$-jets, the most sensitive decay channel for this production mode,
 using the same analysis strategy and integrated luminosity \cite{Aaboud:2019nan}.
+
 The cross section is measured in bins of the transverse momentum of the associated gauge boson,
 $p^{V}_\mathrm{T}$.
+The measurement is performed in the context of the simplified template cross section
+(STXS) framework \cite{deFlorian:2016spz,Badger:2016bpw},
+which is designed to measure cross sections of production modes as well as kinematic phase space
+regions, while reducing the model dependence of the measurements.
+Advanced machine learning techniques are used in this analysis to isolate the signal and enhance the experimental
+sensitivity of the cross section measurements.
 
 The analysis considers events with 2 $b$-tagged jets and 0, 1 or 2 reconstructed leptons consistent
 with vector boson signatures. To extract the signal, eight separate boosted decision trees (BDTs)
@@ -277,6 +276,7 @@ Copyright 2019 CERN for the benefit of the ATLAS Collaboration. CC-BY-4.0 licens
 \begin{thebibliography}{99}
 \bibitem{Evans:2008zzb} L. Evans and P. Bryant, {\em JINST}, 3:S08001, 2008.
 \bibitem{PERF-2007-01} ATLAS Collaboration, {\em JINST}, 3:S08003, 2008.
+\bibitem{ATLAS-TDR-19} ATLAS Collaboration, ATLAS-TDR-19, http://cds.cern.ch/record/1291633, 2010.
 \bibitem{deFlorian:2016spz} D. de Florian et al., CERN-2017-002-M, http://cds.cern.ch/record/2227475, 2017.
 %\bibitem{Badger:2016bpw} J. R. Andersen et al., FERMILAB-CONF-16-175-PPD-T,\\ http://cds.cern.ch/record/2153502.
 \bibitem{Badger:2016bpw} J. R. Andersen et al., \href{http://arxiv.org/abs/1605.04692}{\color{black}{arXiv:1605.04692}}, 2016.
@@ -287,7 +287,7 @@ Copyright 2019 CERN for the benefit of the ATLAS Collaboration. CC-BY-4.0 licens
 \bibitem{Aaboud:2018urx} ATLAS Collaboration, {\em Phys. Lett.} B784:173-191, 2018.
 \end{thebibliography}
 
-%\bibliography{brendlinger}
+\bibliography{brendlinger}
 
 \end{document}
 
